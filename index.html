@@ -7,16 +7,13 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title></title>
+        <title>Yousif's Personal Website</title>
 
         <!-- Bootstrap core CSS -->
         <link href="Stylesheets/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="Stylesheets/cover.css" rel="stylesheet">
-
-        <!-- Custom styles for this template -->
-        <link href="Stylesheets/carousel.css" rel="stylesheet">
+        <link href="Stylesheets/cover.css" rel="stylesheet"> 
     </head>
 
     <body>
@@ -33,7 +30,8 @@
                             <nav>
                                 <ul class="nav masthead-nav">
                                     <li><a href="#Home">Home</a>
-                                    <li><a href="#Projects">About</a></li>
+                                    <li><a href="#Projects">Projects</a></li>
+                                    <li><a href="#Education">Education</a></li>
                                     <li><a href="#Contact">Contact</a></li>
                                     <li><a href="resume.pdf" target="blank">Resume</a></li>
                                 </ul>
@@ -53,59 +51,39 @@
             </div>
         </div>
 
-        <!-- CAROUSEL -->
-        <div id="Projects" class="carousel slide" data-ride="carousel">
-            <!-- Indicator -->
-            <ol class="carousel-indicators">
-                <li data-target="#Projects" data-slide-to="0" class="active"></li>
-                <li data-target="#Projects" data-slide-to="1"></li>
-                <li data-target="#Projects" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img class="first-slide" src="Images/H2GO.png" alt="First Slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Unphased</h1>
-                            <p>Description</p>
-                            <p><a class="btn btn-default" href="http://mattlevonian.itch.io/h2go" role="button">View Details</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="second-slide" src="Images/tetris.png" alt="Second Slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Tetris using Python</h1>
-                            <p>Description</p>
-                            <p><a class="btn btn-default" href="https://github.com/yousifd/Tetris" role="button">View Details</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="third-slide" src="Images/ysfs.jpg" alt="Third Slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Yousif's Secure File System (YSFS)</h1>
-                            <p>Description</p>
-                            <p><a class="btn btn-default" href="https://github.com/yousifd/ysfs" role="button">View Details</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="left carousel-control" href="#Projects" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#Projects" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+        <div id="AboutMe" class="container">
+            <h1>About Me</h1>
+            <p></p>
         </div>
 
+        <div id="Projects" class="container">
+            <h1>Projects</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="img-square" src="Images/H2GO.png" width="140" height"140">
+                    <h1>H2GO</h1>
+                    <p>Description</p>
+                    <p><a class="btn btn-default" href="http://mattlevonian.itch.io/h2go" role="button">View Details &raquo;</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-square" src="Images/tetris.png" width="140" height"140">
+                    <h1>Tetris</h1>
+                    <p>Description</p>
+                    <p><a class="btn btn-default" href="https://github.com/yousifd/Tetris" role="button">View Details &raquo;</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-square" src="Images/ysfs.jpg" width="140" height"140">
+                    <h1>Yousif's Secure File System (YSFS)</h1>
+                    <p>Description</p>
+                    <p><a class="btn btn-default" href="https://github.com/yousifd/ysfs" role="button">View Details &raquo;</a></p>
+                </div>
+            </div>
+        </div>
+        
         <!-- Marketing Messages -->
         <!-- Wrap the rest of the page in another conter to center all the content -->
-        <div class="container marketing">
+        <div id="Education" class="container marketing">
+            <h1>Education</h1>
             <div class="row">
                 <div class="col-lg-4">
                     <img class="img-square" src="Images/usc.png" width="140" height="140">
@@ -130,7 +108,7 @@
                 <p>Email: <a href="mailto:aldolaij@usc.edu">aldolaij@usc.edu</a> |
                 Github: <a href="https://github.com/yousifd">@yousifd</a> |
                 Linkedin: <a href="https://www.linkedin.com/in/yousifd">@yousifd</a> |
-                Twitter: <a href="https://twitter.com/yousifdol">@youisfdol</a></p>
+                Twitter: <a href="https://twitter.com/yousifdol">@yousifdol</a></p>
             </div>
         </div>
 
