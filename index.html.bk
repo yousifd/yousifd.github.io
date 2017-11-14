@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>Yousif Aldolaijan Personal Website</title>
+</head>
+<body>
+  <h2><center>This is the Personal Webpage of Yousif Aldolaijan</center></h2>
+  <center>Check the links below for more information</center>
+  <center><ul style="list-style-type: none">
+    <li><b>Email:</b> aldolaij (at) usc (dot) edu
+    <li><b>Projects:</b> <a href="http://github.yousifd.me">Github</a></li>
+    <li><b>Tweets:</b> <a href="http://twitter.yousifd.me">Twitter</a></li>
+    <li><b>Experience:</b> <a href="http://linkedin.yousifd.me">LinkedIn</a></li>
+  </ul></center>
+  <center> I am working on getting a new website design but you should be able to get to me using the information provided above</center>
+</body>
+</html>
