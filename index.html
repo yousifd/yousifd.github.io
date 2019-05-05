@@ -1,17 +1,178 @@
-<html>
-<head>
-  <title>Yousif Aldolaijan Personal Website</title>
+<html><head>
+  <title>Michael Whittaker</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="canonical" href="http://yousifd.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The homepage of Yousif Aldolaijan.">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139589557-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-139589557-1');
+
+    // By default, Google Analytics does not track link clicks. This code
+    // attaches a click event handler to every link on the page. When a link is
+    // clicked, a Google Analytics event is sent. This allows me to track link
+    // clicks. See [1] and [2] for more information.
+    //
+    // [1]: https://developers.google.com/analytics/devguides/collection/gtagjs/events
+    // [2]: https://developers.google.com/analytics/devguides/collection/analyticsjs/events
+    function handleOutboundLinkClicks(event) {
+      gtag('event', 'click', {
+        'event_category': 'link',
+        'event_label': event.target.href
+      });
+    }
+
+    window.onload = function() {
+      for (let link of document.querySelectorAll("a")) {
+        link.addEventListener("click", handleOutboundLinkClicks);
+      }
+    }
+  </script>
 </head>
+
 <body>
-  <h2><center>This is the Personal Webpage of Yousif Aldolaijan</center></h2>
-  <center>Check the links below for more information</center>
-  <center><ul style="list-style-type: none">
-    <li><b>Email:</b> aldolaij (at) usc (dot) edu
-    <li><a href="https://github.com/yousifd">Github</a></li>
-    <li><a href="https://twitter.com/yousifdol">Twitter</a></li>
-    <li><a href="https://www.linkedin.com/in/yousifd/">LinkedIn</a></li>
-    <li><a href="/Resume.pdf">Resume</a></li>
-  </ul></center>
-  <center> I am working on getting a new website design but you should be able to get to me using the information provided above</center>
-</body>
-</html>
+  <div id="container">
+    <center>
+      <h1 id="name">Yousif Aldolaijan</h1>
+    </center>
+
+    <div id="leftright">
+      <div id="left">
+        <center>
+          <img id="headshot" src="Images/Personal.jpg" alt="headshot"><br>
+          <div id="links">
+            <p><a href="https://github.com/yousifd">[GitHub]</a></p>
+            <p><a href="/Resume.pdf">[Resume]</a></p>
+            <p><a href="https://twitter.com/yousifdol">[Twitter]</a></p>
+            <p><a href="https://github.com/yousifd">[Linkedin]</a></p>
+          </div>
+        </center>
+      </div>
+
+      <div id="right">
+        <div id="about">
+          <h2>About</h2>
+
+          <!--<p>
+          I'm a PhD student at UC Berkeley studying distributed systems and
+          databases under Professor
+          <a href="http://db.cs.berkeley.edu/jmh/">Joe Hellerstein</a> as part
+          of the <a href="https://rise.cs.berkeley.edu/">RISE Lab</a>.
+          </p>
+
+          <p>
+          As an undergraduate at Cornell University, I researched under
+          Professor
+          <a href="http://www.cs.cornell.edu/~jnfoster/">Nate Foster</a>
+          and worked on a system called
+          <a href="publications/felix_SOSR16.pdf">Felix</a>
+          which measures network traffic on end hosts by leveraging
+          <a href="http://www.cs.cornell.edu/~jnfoster/papers/frenetic-netkat.pdf">NetKAT</a>.
+          </p>-->
+        </div>
+
+        <div id="topic">
+          <h2>Research</h2>
+
+
+        </div>
+        <div id="topic">
+          <h2>Projects</h2>
+
+
+        </div>
+        <!-- <div id="topic">
+          <h2>Publications</h2>
+
+          <ul id="topic_list">
+            <li>
+              <span class="papertitle">
+                <a href="publications/bipartisan_paxos.pdf">
+                  Bipartisan Paxos: A Family of Fast, Leaderless, Modular State
+                  Machine Replication Protocols
+                </a>
+              </span>
+              <span class="paperauthors">
+                <span class="me">Michael Whittaker</span>,
+                Neil Giridharan,
+                Adriana Szekeres,
+                Joseph M. Hellerstein,
+                Ion Stoica.
+              </span>
+              <span class="papervenue">
+                In submission.
+              </span>
+            </li>
+
+            <li>
+              <span class="papertitle">
+                <a href="publications/iconfluence_VLDB19.pdf">
+                  Interactive Checks for Coordination Avoidance
+                </a>
+              </span>
+              <span class="paperauthors">
+                <span class="me">Michael Whittaker</span>,
+                Joseph M. Hellerstein.
+              </span>
+              <span class="papervenue">
+                Proceedings of the VLDB, Volume 12, No. 1.
+              </span>
+              <a href="publications/iconfluence_VLDB19_tr.pdf">[technical report]</a>
+              <a href="https://github.com/mwhittaker/enforced_invariant_confluence">[code]</a>
+            </li>
+
+            <li>
+              <span class="papertitle">
+                <a href="publications/wat_SOCC18.pdf">
+                  Debugging Distributed Systems with Why-Across-Time Provenance
+                </a>
+              </span>
+              <span class="paperauthors">
+                <span class="me">Michael Whittaker</span>,
+                Cristina Teodoropol,
+                Peter Alvaro,
+                Joseph M. Hellerstein.
+              </span>
+              <span class="papervenue">
+                SOCC 2018.
+              </span>
+              <a href="publications/wat_SOCC18_errata.txt">[errata]</a>
+              <a href="publications/wat_SOCC18_tr.pdf">[technical report]</a>
+              <a href="https://github.com/mwhittaker/wat">[code]</a>
+              <a href="publications/wat_SOCC18_poster.pdf">[poster]</a>
+              <a href="publications/wat_SOCC18_slides.pdf">[pdf slides]</a>
+              <a href="https://gist.github.com/mwhittaker/894a81851820676c381c6391c807ae3e">[keynote slides]</a>
+            </li>
+
+            <li>
+              <span class="papertitle">
+                <a href="publications/felix_SOSR16.pdf">
+                  Felix: Implementing Traffic Measurement on End Hosts Using
+                  Program Analysis
+                </a>
+              </span>
+              <span class="paperauthors">
+                Haoxian Chen,
+                Nate Foster,
+                Jake Silverman,
+                <span class="me">Michael Whittaker</span>,
+                Brandon Zhang,
+                Rene Zhang.
+              </span>
+              <span class="papervenue">
+                SOSR 2016.
+              </span>
+              <a href="https://github.com/frenetic-lang/netkat-automata">[code]</a>
+              <a href="https://gist.github.com/mwhittaker/b3767f12eb781ffe8437">[powerpoint slides]</a>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</body></html>
