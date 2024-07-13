@@ -4,7 +4,8 @@
     <title>Categories on Yousif Aldolaijan</title>
     <link>http://yousifd.com/categories/</link>
     <description>Recent content in Categories on Yousif Aldolaijan</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://yousifd.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://yousifd.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
